@@ -1,0 +1,77 @@
+@use 'variables';
+
+%logo {
+    height: 20px;
+    color: variables.$text-color;
+}
+
+%hover {
+    color: variables.$accent-color;
+    border: .5px solid variables.$accent-color;
+    border-radius: 4px;
+}
+
+//reusables//
+.nav {
+    &__items {
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        font-size: variables.$s-small;
+        color: variables.$text-color;
+        font-weight: variables.$w-normal;
+        letter-spacing: -0.346154px;
+        &:hover {
+            @extend %hover;
+        }
+    }
+}
+
+//HEADER//
+.header {
+    margin: variables.$side-site-margin;
+    &__nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5vw 0;
+        &__logo {
+            @extend %logo;
+        }
+    }
+}
+
+//FOOTER//
+.footer {
+    margin: variables.$side-site-margin;
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 5vw 0;
+        &__logo {
+            @extend %logo;
+        }
+        &__icons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 24px;
+            width: 160px;
+            padding-left: 30px;
+        }
+        &__icon {
+            color: variables.$black-color;
+            font-size: variables.$s-small; 
+            &:hover {
+                @extend %hover;
+            }
+        }
+    }
+}
+
