@@ -128,4 +128,72 @@ body {
   color: #111111;
   font-style: italic;
   opacity: 0.6;
+}
+.main .gallery {
+  width: 100%;
+  max-width: 1600px;
+}
+.main .gallery .grid {
+  height: 100%;
+  max-height: 1960px;
+}
+.main .gallery .grid__element img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.main .gallery .grid__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(32, 1fr);
+  gap: 2vw;
+}
+.main .gallery .grid__container .first {
+  grid-row: 1/8;
+  grid-column: 1/2;
+}
+.main .gallery .grid__container .second {
+  grid-row: 8/16;
+  grid-column: 1/2;
+}
+.main .gallery .grid__container .third {
+  grid-row: 16/24;
+  grid-column: 1/2;
+}
+.main .gallery .grid__container .fourth {
+  grid-row: 24/33;
+  grid-column: 1/2;
+}
+.main .gallery .grid__container .fifth {
+  grid-row: 1/7;
+  grid-column: 2/3;
+}
+.main .gallery .grid__container .sixth {
+  grid-row: 7/14;
+  grid-column: 2/3;
+}
+.main .gallery .grid__container .seventh {
+  grid-row: 14/23;
+  grid-column: 2/3;
+}
+.main .gallery .grid__container .eight {
+  grid-row: 23/33;
+  grid-column: 2/3;
+}
+.main .gallery .grid__container .ninth {
+  grid-row: 1/11;
+  grid-column: 3/4;
+}
+.main .gallery .grid__container .tenth {
+  grid-row: 11/18;
+  grid-column: 3/4;
+}
+.main .gallery .grid__container .eleventh {
+  grid-row: 18/27;
+  grid-column: 3/4;
+}
+.main .gallery .grid__container .twelfth {
+  grid-row: 27/33;
+  grid-column: 3/4;
 }/*# sourceMappingURL=styles.css.map */

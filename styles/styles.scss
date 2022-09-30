@@ -75,6 +75,76 @@ body {
             }
         }
     }
-
     //GALLERY// 
+    .gallery {
+        width: 100%;
+        max-width: 1600px;
+        //grid// 
+        .grid {
+            height: 100%;
+            max-height: 1960px;
+            &__element {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                }
+            }
+            &__container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(32, 1fr);
+                gap: 2vw;
+                .first {  
+                    grid-row: 1/8;
+                    grid-column: 1/2;
+                }
+                .second {
+                    grid-row: 8/16;
+                    grid-column: 1/2;
+                }
+                .third {
+                    grid-row: 16/24;
+                    grid-column: 1/2;
+                }
+                .fourth {
+                    grid-row: 24/33;
+                    grid-column: 1/2;
+                }
+                .fifth {
+                    grid-row: 1/7;
+                    grid-column: 2/3;
+                }
+                .sixth {
+                    grid-row: 7/14;
+                    grid-column: 2/3;
+                }
+                .seventh {
+                    grid-row: 14/23;
+                    grid-column: 2/3;
+                }
+                .eight {
+                    grid-row: 23/33;
+                    grid-column: 2/3;
+                }
+                .ninth {
+                    grid-row: 1/11;
+                    grid-column: 3/4;
+                }
+                .tenth {
+                    grid-row: 11/18;
+                    grid-column: 3/4;
+                }
+                .eleventh {
+                    grid-row: 18/27;
+                    grid-column: 3/4;
+                }
+                .twelfth {
+                    grid-row: 27/33;
+                    grid-column: 3/4;
+                }
+            }
+            
+        }
+    }
 }
