@@ -7,6 +7,7 @@
   color: #4a4ff2;
   border: 0.5px solid #4a4ff2;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .nav__items {
@@ -143,6 +144,10 @@ body {
   -o-object-fit: fill;
      object-fit: fill;
 }
+.main .gallery .grid__element img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 .main .gallery .grid__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -236,6 +241,7 @@ body {
   opacity: 1;
   color: #4a4ff2;
   text-decoration: underline;
+  cursor: pointer;
 }
 .main .awards__content {
   display: flex;
