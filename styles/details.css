@@ -56,6 +56,19 @@
   color: #000;
   font-size: 18px;
 }
+.main .description__right__line {
+  width: 100%;
+  height: 2px;
+  background-color: #d8d8d8;
+}
+
+.main .description__right__item__text, .main .description__right__item__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 23px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -74,4 +87,81 @@ ul, li {
 body {
   overflow-x: hidden;
   background-color: #fff;
+}
+
+.main {
+  margin: 0 10vw;
+}
+.main .description {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 0 5vw 0;
+}
+.main .description__left {
+  width: 100%;
+  max-width: 635px;
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+.main .description__left__title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 55px;
+}
+.main .description__left__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+  line-height: 26px;
+  opacity: 0.8;
+}
+.main .description__right {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+.main .description__right__item {
+  display: flex;
+  justify-content: space-between;
+}
+.main .description__right__item__title {
+  opacity: 0.5;
+}
+.main .description__right__item__text {
+  width: 100%;
+  max-width: 200px;
+}
+.main .project {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+.main .project__main-img {
+  width: 100%;
+  height: auto;
+}
+.main .project__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+  line-height: 26px;
+  opacity: 0.8;
+}
+.main .project__gallery {
+  width: 100%;
+  display: flex;
+  gap: 2.5vw;
+  margin-bottom: 8vw;
+}
+.main .project__gallery img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=details.css.map */
