@@ -41,6 +41,9 @@
         padding: 5vw 0;
         &__logo {
             @extend %logo;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 }
