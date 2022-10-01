@@ -1,0 +1,27 @@
+@use 'variables';
+
+@import 'header-and-footer';
+
+%divider {
+    width: 100%;
+    height: 2px;
+    background-color: variables.$divider-color;
+}
+
+//base//
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: variables.$main-font;
+}
+a, button, input, textarea, select {
+    all: unset;
+}
+ul, li {
+    list-style-type: none;
+}
+body {
+    overflow-x: hidden;  //hide width scroll
+    background-color: variables.$white-color;
+}

@@ -1,0 +1,77 @@
+.footer__content__logo, .header__nav__logo {
+  height: 20px;
+  color: #111111;
+}
+
+.footer__content__icon:hover, .nav__item:hover {
+  color: #4a4ff2;
+  border: 0.5px solid #4a4ff2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav__items {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__item {
+  font-size: 18px;
+  color: #111111;
+  font-weight: 400;
+  letter-spacing: -0.346154px;
+}
+.header {
+  margin: 0 10vw;
+}
+.header__nav {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5vw 0;
+}
+.footer {
+  margin: 0 10vw;
+}
+.footer__menu {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vw 0;
+}
+.footer__content__icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  width: 160px;
+  padding-left: 30px;
+}
+.footer__content__icon {
+  color: #000;
+  font-size: 18px;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+a, button, input, textarea, select {
+  all: unset;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+}/*# sourceMappingURL=contact.css.map */
