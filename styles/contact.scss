@@ -25,3 +25,90 @@ body {
     overflow-x: hidden;  //hide width scroll
     background-color: variables.$white-color;
 }
+
+.main {
+    margin: variables.$side-site-margin;
+    .contact {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        justify-content: space-between;
+        padding: 3vw 0 10vw 0;
+        &__left {
+            width: 100%;
+            max-width: 445px;
+            display: flex;
+            flex-direction: column;
+            gap: 3vw;
+            &__title {
+                font-size: variables.$s-large;
+                font-weight: variables.$w-bold;
+                color: variables.$text-color;
+                line-height: 55px;
+            }
+            &__text {
+                font-size: variables.$s-x-small;
+                font-weight: variables.$w-normal;
+                color: variables.$text-color;
+                line-height: 26px;
+                opacity: 0.8;
+            }
+        }
+        &__right {
+            width: 100%;
+            max-width: 475px;
+            &__form {
+                display: flex;
+                flex-direction: column;
+                &__input {
+                    width: 100%;
+                    max-width: 475px;
+                    height: 3vw;
+                    &::placeholder {
+                        font-size: variables.$s-x-small;
+                        font-weight: variables.$w-bold;
+                        color: variables.$text-color;
+                        line-height: 20px;
+                        opacity: 0.6;
+                    }
+                    &:hover {
+                        background-color: variables.$divider-color;
+                    }
+                    &:focus {
+                        background-color: variables.$divider-stroke-color;
+                    }
+                }
+                &__line {
+                    @extend %divider;
+                    margin-bottom: 4vw;
+                }
+                &__btn {
+                    width: 125px;
+                    height: 50px;
+                    background-color: variables.$accent-color;
+                    text-align: center;
+                    font-size: variables.$s-x-small;
+                    font-weight: variables.$w-bold;
+                    color: variables.$white-color;
+                    line-height: 20px;
+                    &:hover {
+                        border-radius: 12px;
+                        transform: scale(1.1);
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .map {
+        width: 100%;
+        max-width: 1600px;
+        margin-bottom: 5vw;
+        &__img {
+            width: 100%;
+            max-width: 1600px;
+            height: auto;
+        }
+    }
+}
